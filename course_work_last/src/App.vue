@@ -1,28 +1,19 @@
 <template>
   <div id="app">
     <HeaderComponent title="Привіт" />
-    <ProductList
-      name="Музичний інструмент"
-      description="Якийсь опис цього інструмента"
-      price="1500"
-      image=""
-    />
-    <RewiewsComponent />
+    <router-view></router-view>
     <FooterComponent />
   </div>
 </template>
 
 <script>
-import RewiewsComponent from "./components/RewiewsComponent.vue";
 import FooterComponent from "./components/FooterComponent.vue";
 import HeaderComponent from "./components/HeaderComponent.vue";
-import ProductList from "./components/ProductList.vue";
+
 export default {
   components: {
     HeaderComponent,
-    ProductList,
     FooterComponent,
-    RewiewsComponent,
   },
 };
 </script>
