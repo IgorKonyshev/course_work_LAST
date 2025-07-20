@@ -1,24 +1,22 @@
 <template>
-  <div>
+  <div id="app">
     <HeaderComponent title="Привіт" />
-    <MessageComponent
-      title="Привіт ще раз"
-      message="Я вмію створювати компоненти із пропсами!"
-    />
-    <MessageComponent
-      title="Що далі?"
-      message="Тепер я можу передавати різні дані в компоненти!"
+    <ProductList
+      name="Музичний інструмент"
+      description="Якийсь опис цього інструмента"
+      price="1500"
+      image=""
     />
   </div>
 </template>
 
 <script>
-import MessageComponent from "./components/MessageComponent.vue";
 import HeaderComponent from "./components/HeaderComponent.vue";
+import ProductList from "./components/ProductList.vue";
 export default {
   components: {
     HeaderComponent,
-    MessageComponent,
+    ProductList,
   },
 };
 </script>
