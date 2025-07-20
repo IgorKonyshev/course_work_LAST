@@ -7,16 +7,19 @@
       price="1500"
       image=""
     />
+    <FooterComponent />
   </div>
 </template>
 
 <script>
+import FooterComponent from "./components/FooterComponent.vue";
 import HeaderComponent from "./components/HeaderComponent.vue";
 import ProductList from "./components/ProductList.vue";
 export default {
   components: {
     HeaderComponent,
     ProductList,
+    FooterComponent,
   },
 };
 </script>
@@ -28,6 +31,11 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  margin: 0;
+  height: 100%;
+}
+body {
+  margin: 0;
+  height: 100%;
 }
 </style>

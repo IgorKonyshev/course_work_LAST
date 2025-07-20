@@ -21,3 +21,46 @@ export default {
   },
 };
 </script>
+
+<style>
+.product-card {
+  width: 250px;
+  height: auto;
+  border: 1px solid #ccc;
+  padding: 15px;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 8px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.product-image {
+  width: 100%;
+  height: 200px; /* 👈 Встановлюємо фіксовану висоту */
+  object-fit: cover; /* 👈 Зображення обрізається красиво */
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+.price {
+  font-weight: bold;
+  margin: 10px 0;
+  color: #2c3e50;
+}
+
+.buy-button {
+  background-color: #2ecc71;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.buy-button:hover {
+  background-color: #27ae60;
+}
+</style>
