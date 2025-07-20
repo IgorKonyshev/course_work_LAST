@@ -4,63 +4,76 @@
     <h2>{{ name }}</h2>
     <p>{{ description }}</p>
     <p class="price">{{ price }} грн</p>
-    <button class="buy-button">Купити</button>
+    <button class="buy-button" @click="handleAddToCart">Купити</button>
   </div>
 </template>
 
 <script>
+import { inject } from "vue";
+
 export default {
   props: {
     name: String,
-    description: {
-      type: String,
-      default: "", // Можна не передавати, тоді буде порожній
-    },
     price: Number,
     image: String,
+    description: {
+      type: String,
+      default: "Опис товару відсутній",
+    },
+  },
+  setup(props) {
+    const addToCart = inject("addToCart");
+
+    const handleAddToCart = () => {
+      const product = {
+        name: props.name,
+        price: props.price,
+        image: props.image,
+      };
+      addToCart(product);
+    };
+
+    return {
+      handleAddToCart,
+    };
   },
 };
 </script>
 
-<style>
+<style scoped>
 .product-card {
+  border: 1px solid #ddd;
+  padding: 20px;
   width: 250px;
-  height: auto;
-  border: 1px solid #ccc;
-  padding: 15px;
+  border-radius: 10px;
   text-align: center;
-  background-color: #fff;
-  border-radius: 8px;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  transition: box-shadow 0.3s;
+}
+
+.product-card:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .product-image {
-  width: 100%;
-  height: 200px; /* 👈 Встановлюємо фіксовану висоту */
-  object-fit: cover; /* 👈 Зображення обрізається красиво */
-  border-radius: 6px;
-  margin-bottom: 10px;
+  max-width: 100%;
+  height: auto;
 }
 
 .price {
   font-weight: bold;
   margin: 10px 0;
-  color: #2c3e50;
 }
 
 .buy-button {
-  background-color: #2ecc71;
+  background-color: #42b983;
   color: white;
   border: none;
-  padding: 8px 16px;
+  padding: 10px 20px;
+  border-radius: 5px;
   cursor: pointer;
-  border-radius: 4px;
 }
 
 .buy-button:hover {
-  background-color: #27ae60;
+  background-color: #36966e;
 }
 </style>
