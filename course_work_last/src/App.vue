@@ -7,11 +7,13 @@
       price="1500"
       image=""
     />
+    <RewiewsComponent />
     <FooterComponent />
   </div>
 </template>
 
 <script>
+import RewiewsComponent from "./components/RewiewsComponent.vue";
 import FooterComponent from "./components/FooterComponent.vue";
 import HeaderComponent from "./components/HeaderComponent.vue";
 import ProductList from "./components/ProductList.vue";
@@ -20,6 +22,7 @@ export default {
     HeaderComponent,
     ProductList,
     FooterComponent,
+    RewiewsComponent,
   },
 };
 </script>
