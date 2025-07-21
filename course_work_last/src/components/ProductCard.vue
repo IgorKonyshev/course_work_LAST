@@ -55,8 +55,10 @@ export default {
 }
 
 .product-image {
-  max-width: 100%;
-  height: auto;
+  width: 100%;
+  height: 200px; /* или сколько тебе нужно */
+  object-fit: cover;
+  border-radius: 10px; /* если надо скругление */
 }
 
 .price {
