@@ -57,8 +57,8 @@ export default {
 .product-image {
   width: 100%;
   height: 200px; /* или сколько тебе нужно */
-  object-fit: cover;
-  border-radius: 10px; /* если надо скругление */
+  object-fit: contain;
+  background-color: #fff; /* если надо скругление */
 }
 
 .price {

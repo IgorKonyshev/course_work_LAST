@@ -1,6 +1,7 @@
 <template>
   <div>
     <nav class="header">
+      <img class="Losyash" src="/Лосяш.png" alt="losyash" />
       <router-link to="/admin/products">
         <button class="button-header">Головна</button></router-link
       >
@@ -39,5 +40,9 @@ a {
 }
 :active.button-header {
   background-color: green;
+}
+.Losyash {
+  width: 90px;
+  border-radius: 4px;
 }
 </style>

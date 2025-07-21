@@ -31,45 +31,45 @@ export default {
     const products = ref([
       {
         id: 1,
-        name: "Смартфон Samsung Galaxy S23",
-        price: 35000,
+        name: "Электрогитара Schecter Sun Valley SS Exotic HT Black Limba NS",
+        price: 76927,
         image:
-          "https://img.freepik.com/free-photo/white-cell-phone-box-background_58702-4721.jpg",
+          "https://guitarhouse.com.ua/content/images/26/576x1800l80mc0/elektrohitara-schecter-sun-valley-ss-exotic-ht-black-limba-ns-69324944950565.webp",
       },
       {
         id: 2,
-        name: "Ноутбук Apple MacBook Air M2",
-        price: 58000,
+        name: "Синтезатор Korg EK-50",
+        price: 18900,
         image:
-          "https://img.freepik.com/free-photo/workplace-with-laptop-stand-near-eyeglasses_23-2148040478.jpg",
+          "https://monkeymusic.ua/image/cache/catalog/pimcore/korg-ek-50-1100x1100.jpg",
       },
       {
         id: 3,
-        name: "Бездротові навушники Sony",
-        price: 7800,
+        name: "Укулеле Kala Makala Concert Ukulele",
+        price: 2873,
         image:
-          "https://img.freepik.com/free-photo/closeup-shot-white-wireless-headphones-with-their-case-white-background_181624-31412.jpg",
+          "https://monkeymusic.ua/image/cache/catalog/pimcore/kala-makala-concert-1100x1100.jpg",
       },
       {
         id: 4,
-        name: "Механічна клавіатура HyperX",
-        price: 4500,
+        name: "Аналоговый микшер 4all Audio AK4",
+        price: 2360,
         image:
-          "https://img.freepik.com/free-photo/top-view-keyboard-mouse-arrangement_23-2149386333.jpg",
+          "https://showtechnica.com.ua/image/cache/catalog/foto_tovarov/new-folder/86236-1200x1200.jpg",
       },
       {
         id: 5,
-        name: "Смарт-годинник Apple Watch Series 9",
-        price: 17000,
+        name: "Рояль Yamaha С1 (Polished White)",
+        price: 1599860,
         image:
-          "https://img.freepik.com/free-photo/modern-sport-adult-hand-lifestyle_1127-2745.jpg",
+          "https://guitarhouse.com.ua/content/images/2/400x484l80mc0/roial-yamaha-s1-polished-white-73799510756791.webp",
       },
       {
         id: 6,
-        name: "Портативна колонка JBL Series 1",
-        price: 5200,
+        name: "Бас-гитара YAMAHA TRBX-174",
+        price: 12702,
         image:
-          "https://img.freepik.com/free-photo/still-life-tech-device_23-2150722602.jpg",
+          "https://guitarhouse.com.ua/content/images/8/1600x1600l80mc0/bas-gitara-yamaha-trbx-174-black-26206771319788.webp",
       },
     ]);
 
