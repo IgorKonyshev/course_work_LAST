@@ -8,6 +8,7 @@
       <router-link to="/admin/reviews"
         ><button class="button-header">Відгуки</button></router-link
       >
+      <router-link to="/login">Особистий кабінет</router-link>
     </nav>
     <main><router-view /></main>
   </div>

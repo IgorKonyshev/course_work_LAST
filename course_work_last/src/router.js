@@ -1,9 +1,26 @@
 import { createRouter, createWebHistory } from "vue-router";
 import AdminDashboard from "./pages/AdminDashboard.vue";
+import LoginPage from "./pages/LoginPage.vue";
+import ProfilePage from "./pages/ProfilePage.vue";
 import ManageProducts from "./pages/ManageProducts.vue";
 import ManageReviews from "./pages/ManageReviews.vue";
 
 const routes = [
+  {
+    path: "/",
+    name: "AdminDashboard",
+    component: AdminDashboard,
+  },
+  {
+    path: "/login",
+    name: "Login",
+    component: LoginPage,
+  },
+  {
+    path: "/profile",
+    name: "Profile",
+    component: ProfilePage,
+  },
   {
     path: "/",
     component: AdminDashboard, // Використовуємо AdminDashboard як головний компонент
