@@ -1,8 +1,8 @@
 <template>
   <h2>Відгуки</h2>
-  <table>
+  <table class="reviews-table">
     <thead>
-      <tr>
+      <tr class="reviews-header">
         <th>Ім'я</th>
         <th>Рейтинг</th>
         <th>Коментар</th>
@@ -47,3 +47,36 @@ export default {
   },
 };
 </script>
+
+<style>
+.reviews-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  border: 4px solid #e0e0e0;
+  gap: 10px;
+}
+.reviews-header {
+  background-color: #f0f0f0;
+  font-weight: bold;
+}
+.reviews-header th {
+  padding: 10px;
+  border: 1px solid #e0e0e0;
+}
+.reviews-table td {
+  padding: 10px;
+  border: 1px solid #e0e0e0;
+}
+.reviews-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+.reviews-table tr:hover {
+  background-color: #f1f1f1;
+}
+.reviews-table th,
+.reviews-table td {
+  text-align: left;
+  vertical-align: top;
+}
+</style>
