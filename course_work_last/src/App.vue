@@ -121,7 +121,7 @@ p {
 }
 
 button {
-  background-color: #42b983;
+  background-color: transparent;
   border: none;
   padding: 15px 30px;
   font-size: 1.25rem;

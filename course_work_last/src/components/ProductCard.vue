@@ -18,7 +18,6 @@ export default {
     image: String,
     description: {
       type: String,
-      default: "Опис товару відсутній",
     },
   },
   setup(props) {
