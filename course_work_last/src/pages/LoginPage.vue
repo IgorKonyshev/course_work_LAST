@@ -48,6 +48,7 @@ export default {
 
       if (user) {
         localStorage.setItem("authUser", this.username);
+        localStorage.setItem("authRole", user.role); // добавь эту строку
         this.$router.push("/profile");
       } else {
         this.message = "Невірний логін або пароль!";
