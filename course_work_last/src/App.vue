@@ -153,5 +153,6 @@ button:hover {
 router-view,
 main {
   flex: 1;
+  margin: 40px;
 }
 </style>
