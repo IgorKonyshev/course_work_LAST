@@ -1,14 +1,16 @@
 <template>
   <AdminDashboard />
-  <div class="login-container">
-    <h2>Авторизація</h2>
-    <h4>Введіть логін:</h4>
-    <input v-model="username" placeholder="Логін" />
-    <h4>Введіть пароль:</h4>
-    <input v-model="password" type="password" placeholder="Пароль" />
-    <button v-on:click="login">Увійти</button>
-    <a href="">Забули пароль?</a>
-    <p v-if="message" class="error">{{ message }}</p>
+  <div class="login-page">
+    <div class="login-container">
+      <h2>Авторизація</h2>
+      <h4>Введіть логін:</h4>
+      <input v-model="username" placeholder="Логін" />
+      <h4>Введіть пароль:</h4>
+      <input v-model="password" type="password" placeholder="Пароль" />
+      <button v-on:click="login">Увійти</button>
+      <a href="">Забули пароль?</a>
+      <p v-if="message" class="error">{{ message }}</p>
+    </div>
   </div>
 </template>
 
@@ -68,6 +70,17 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20px;
+  gap: 10px;
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 400px;
+  margin: auto;
+}
+.login-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 </style>

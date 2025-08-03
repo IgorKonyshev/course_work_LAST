@@ -4,7 +4,7 @@
     <h2>{{ name }}</h2>
     <p>{{ description }}</p>
     <p class="price">{{ price }} грн</p>
-    <button @click="$emit('add-to-cart')">В корзину</button>
+    <button class="buy-button" @click="$emit('add-to-cart')">В корзину</button>
   </div>
 </template>
 
@@ -21,12 +21,17 @@ export default {
 
 <style scoped>
 .product-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
   border: 1px solid #ddd;
   padding: 20px;
   width: 250px;
   border-radius: 10px;
   text-align: center;
   transition: box-shadow 0.3s;
+  height: 100%; /* чтобы все карточки были одинаковой высоты */
+  min-height: 502.24px;
 }
 
 .product-card:hover {
@@ -35,9 +40,9 @@ export default {
 
 .product-image {
   width: 100%;
-  height: 200px; /* или сколько тебе нужно */
+  height: 200px;
   object-fit: contain;
-  background-color: #fff; /* если надо скругление */
+  background-color: #fff;
 }
 
 .price {
@@ -46,6 +51,7 @@ export default {
 }
 
 .buy-button {
+  margin-top: auto; /* Кнопка всегда внизу карточки */
   background-color: #42b983;
   color: white;
   border: none;

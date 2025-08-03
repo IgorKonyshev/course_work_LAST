@@ -33,5 +33,7 @@ export default {
   flex-wrap: wrap;
   gap: 20px;
   justify-content: center;
+  align-items: stretch;
+  align-content: stretch;
 }
 </style>
