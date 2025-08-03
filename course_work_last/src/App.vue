@@ -22,7 +22,7 @@ const SplashScreen = {
       <div class="overlay">
         <h1>Заходи скорее!</h1>
         <p>Виртуоз гитары уже ждет тебя на сайте</p>
-        <button @click="enter">Войти на сайт</button>
+        <button id="button-beginning" @click="enter">Войти на сайт</button>
       </div>
     </div>
   `,
@@ -119,9 +119,14 @@ p {
   font-size: 1.5rem;
   margin-bottom: 2rem;
 }
-
-button {
+#button-beginning {
   background-color: transparent;
+}
+#button-beginning:hover {
+  background-color: #36966e;
+}
+button {
+  background-color: #9cdec0;
   border: none;
   padding: 15px 30px;
   font-size: 1.25rem;

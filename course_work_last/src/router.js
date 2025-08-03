@@ -7,11 +7,6 @@ import ManageReviews from "./pages/ManageReviews.vue";
 
 const routes = [
   {
-    path: "/",
-    name: "AdminDashboard",
-    component: AdminDashboard,
-  },
-  {
     path: "/login",
     name: "Login",
     component: LoginPage,

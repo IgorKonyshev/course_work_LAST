@@ -6,6 +6,7 @@
       :name="product.name"
       :price="product.price"
       :image="product.image"
+      @add-to-cart="$emit('add-to-cart', product)"
     />
   </div>
 </template>

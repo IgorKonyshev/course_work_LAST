@@ -4,37 +4,17 @@
     <h2>{{ name }}</h2>
     <p>{{ description }}</p>
     <p class="price">{{ price }} грн</p>
-    <button class="buy-button" @click="handleAddToCart">Купити</button>
+    <button @click="$emit('add-to-cart')">В корзину</button>
   </div>
 </template>
 
 <script>
-import { inject } from "vue";
-
 export default {
   props: {
     name: String,
     price: Number,
     image: String,
-    description: {
-      type: String,
-    },
-  },
-  setup(props) {
-    const addToCart = inject("addToCart");
-
-    const handleAddToCart = () => {
-      const product = {
-        name: props.name,
-        price: props.price,
-        image: props.image,
-      };
-      addToCart(product);
-    };
-
-    return {
-      handleAddToCart,
-    };
+    description: String,
   },
 };
 </script>
