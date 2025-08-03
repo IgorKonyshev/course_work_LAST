@@ -8,7 +8,9 @@
       <router-link to="/admin/reviews"
         ><button class="button-header">Відгуки</button></router-link
       >
-      <router-link to="/login">Особистий кабінет</router-link>
+      <router-link to="/login"
+        ><button class="button-header">Вхід</button></router-link
+      >
     </nav>
     <main><router-view /></main>
   </div>
@@ -33,8 +35,8 @@ a {
 }
 .button-header {
   background: rgb(205, 219, 220);
-  border-radius: 4px;
-  font-size: 20px;
+  border-radius: 8px;
+  font-size: 15px;
 }
 :hover.button-header {
   background-color: rgb(80, 226, 136);
