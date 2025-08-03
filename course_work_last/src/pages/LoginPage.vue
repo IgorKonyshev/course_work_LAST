@@ -1,4 +1,5 @@
 <template>
+  <AdminDashboard />
   <div class="login-container">
     <h2>Авторизація</h2>
     <h4>Введіть логін:</h4>
@@ -12,6 +13,8 @@
 </template>
 
 <script>
+import AdminDashboard from "./AdminDashboard.vue";
+
 export default {
   data() {
     return {
@@ -21,6 +24,8 @@ export default {
       users: [],
     };
   },
+  components: { AdminDashboard },
+
   async mounted() {
     try {
       const response = await fetch("/admin.json");

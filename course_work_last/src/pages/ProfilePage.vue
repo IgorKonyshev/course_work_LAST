@@ -1,5 +1,6 @@
 <template>
-  <div>
+  <AdminDashboard />
+  <div class="profile-container">
     <h2>Адмін-панель</h2>
     <p>Вітаємо, {{ username }}!</p>
     <p v-if="role === 'admin'">Ваша роль: Адміністратор</p>
@@ -19,6 +20,8 @@
 </template>
 
 <script>
+import AdminDashboard from "./AdminDashboard.vue";
+
 export default {
   data() {
     return {
@@ -26,6 +29,10 @@ export default {
       role: localStorage.getItem("authRole") || "",
     };
   },
+  components: {
+    AdminDashboard,
+  },
+
   methods: {
     logout() {
       localStorage.removeItem("authUser");
@@ -40,3 +47,16 @@ export default {
   },
 };
 </script>
+
+<style>
+.profile-container {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  max-width: 600px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+</style>
