@@ -6,8 +6,7 @@ module.exports = {
       },
     },
   },
-  publicPath:
-    process.env.NODE_ENV === "production"
-      ? "/course_work_LAST/" // ім'я репозиторію
-      : "/",
+  publicPath: process.env.NODE_ENV === "production"
+    ? "/course_work_LAST/"
+    : "/",
 };
