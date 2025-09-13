@@ -35,7 +35,7 @@ const routes = [
 ];
 
 const router = createRouter({
-  history: createWebHistory("/course_work_LAST/"), // Вказуємо базовий шлях для GitHub Pages
+ history: createWebHistory("/igorekshop_prime/"), // Вказуємо базовий шлях для GitHub Pages
   routes,
 });
 
