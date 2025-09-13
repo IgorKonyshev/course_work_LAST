@@ -1,7 +1,7 @@
 <template>
   <div>
     <nav class="header">
-      <img class="Losyash" src="/Лосяш.png" alt="losyash" />
+      <img class="Losyash" src="/course_work_LAST/public/Лосяш.png" alt="losyash" />
       <router-link to="/admin/products">
         <button class="button-header">Головна</button></router-link
       >
