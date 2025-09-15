@@ -16,7 +16,7 @@ const SplashScreen = {
   template: `
     <div class="splash-screen">
       <video autoplay muted loop class="background-video">
-        <source src="guitarist.mp4" type="video/mp4" />
+        <source src="/guitarist.mp4" type="video/mp4" />
         Ваш браузер не поддерживает видео.
       </video>
       <div class="overlay">
